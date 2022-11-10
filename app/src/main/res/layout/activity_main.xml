@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+       <TextView
+           android:id="@+id/title"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="5dp"
+           android:layout_marginTop="5dp"
+           android:text="INGENIERIA JHR"
+           android:textAlignment="center"
+           android:textSize="25sp"
+           android:textStyle="bold"></TextView>
+
+       <RelativeLayout
+           android:id="@+id/linearPaint"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_marginBottom="5dp"
+           android:layout_marginEnd="5dp"
+           android:layout_marginStart="5dp"
+           android:layout_marginTop="5dp"
+           android:layout_below="@id/title"></RelativeLayout>
+
+
+       <com.github.clans.fab.FloatingActionMenu
+           android:id="@+id/floatingButton"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentEnd="true"
+           android:layout_alignParentBottom="true"
+           android:layout_marginEnd="10dp"
+           android:layout_marginBottom="10dp"
+           android:src="@drawable/fab_add"
+           app:fab_colorNormal="#D81B60">
+
+              <com.github.clans.fab.FloatingActionButton
+                  android:id="@+id/fab_play"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:src="@drawable/ic_baseline_play_circle_24"
+                  app:fab_label="play"
+                  ></com.github.clans.fab.FloatingActionButton>
+
+              <com.github.clans.fab.FloatingActionButton
+                  android:id="@+id/fab_ajustes"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:src="@drawable/ic_baseline_calculate_24"
+                  app:fab_label="Ajustes"></com.github.clans.fab.FloatingActionButton>
+
+              <com.github.clans.fab.FloatingActionButton
+                  android:id="@+id/fab_meta"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:src="@drawable/ic_finish"
+                  app:fab_label="Meta"></com.github.clans.fab.FloatingActionButton>
+
+              <com.github.clans.fab.FloatingActionButton
+                  android:id="@+id/fab_obstaculos"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:src="@drawable/ic_baseline_back_hand_24"
+                  app:fab_label="Obstaculos"></com.github.clans.fab.FloatingActionButton>
+
+
+       </com.github.clans.fab.FloatingActionMenu>
+
+
+
+
+
+
+
+</RelativeLayout>
