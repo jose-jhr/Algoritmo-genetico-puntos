@@ -6,9 +6,11 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
+
        <TextView
            android:id="@+id/title"
-           android:layout_width="match_parent"
+           android:layout_width="wrap_content"
            android:layout_height="wrap_content"
            android:layout_marginStart="5dp"
            android:layout_marginTop="5dp"
@@ -17,15 +19,32 @@
            android:textSize="25sp"
            android:textStyle="bold"></TextView>
 
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentEnd="true"
+           android:text="Muertos: 0"
+           android:layout_marginEnd="5dp"
+           android:layout_marginTop="2dp"
+           android:id="@+id/txt_muertos"></TextView>
+
+
        <RelativeLayout
            android:id="@+id/linearPaint"
            android:layout_width="match_parent"
            android:layout_height="match_parent"
-           android:layout_marginBottom="5dp"
-           android:layout_marginEnd="5dp"
+           android:layout_below="@id/title"
            android:layout_marginStart="5dp"
            android:layout_marginTop="5dp"
-           android:layout_below="@id/title"></RelativeLayout>
+           android:layout_marginEnd="5dp"
+           android:layout_marginBottom="5dp"></RelativeLayout>
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/deadText"
+           >
+       </TextView>
 
 
        <com.github.clans.fab.FloatingActionMenu
@@ -44,8 +63,7 @@
                   android:layout_width="wrap_content"
                   android:layout_height="wrap_content"
                   android:src="@drawable/ic_baseline_play_circle_24"
-                  app:fab_label="play"
-                  ></com.github.clans.fab.FloatingActionButton>
+                  app:fab_label="play"></com.github.clans.fab.FloatingActionButton>
 
               <com.github.clans.fab.FloatingActionButton
                   android:id="@+id/fab_ajustes"
@@ -62,11 +80,11 @@
                   app:fab_label="Meta"></com.github.clans.fab.FloatingActionButton>
 
               <com.github.clans.fab.FloatingActionButton
-                  android:id="@+id/fab_obstaculos"
+                  android:id="@+id/fab_reload"
                   android:layout_width="wrap_content"
                   android:layout_height="wrap_content"
-                  android:src="@drawable/ic_baseline_back_hand_24"
-                  app:fab_label="Obstaculos"></com.github.clans.fab.FloatingActionButton>
+                  android:src="@drawable/ic_reload_svgrepo_com"
+                  app:fab_label="Reiniciar"></com.github.clans.fab.FloatingActionButton>
 
 
        </com.github.clans.fab.FloatingActionMenu>
